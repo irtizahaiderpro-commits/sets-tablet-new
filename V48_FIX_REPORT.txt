@@ -1,0 +1,11 @@
+V48 fix only changes src/index.css.
+
+Fix: On mobile, AppHeader title/subtitle for Saved Records / Print Library and Throughput Last 7 Days overlapped with right-side buttons/pills.
+
+Added mobile-only CSS:
+- AppHeader becomes a two-row grid on phone.
+- Title/subtitle stay on first row and are clamped.
+- Back/Home/filter pills move into a horizontal scroll row below.
+- Action buttons no longer collide with title text.
+
+Replace only src/index.css in GitHub, then let Netlify rebuild with npm run build -> dist.
