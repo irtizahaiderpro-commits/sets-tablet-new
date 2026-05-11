@@ -1,0 +1,12 @@
+Driver receipt rebuild v44
+
+Changed:
+- Rebuilt Driver Receipt as a separate compact slip layout, not a SETS/EFTCO receipt copy.
+- Reworked the driver receipt into clean bordered grids matching the handwritten slip structure: date, receipt no, order no, company, vehicle, tank type, tank no, pots, previous product, CMR, category, driver name/signature, and comments.
+- Removed hard-coded/copy-paste style comments. Driver receipt comments are now built only from form fields that actually exist in the record: comments, wash comments, procedure, heating hours, time in, time out, target temperature and additional services.
+- Kept SETS Receipt separate.
+- Patched built dist and static-preview assets for Netlify upload.
+- JS syntax check passed on patched built files.
+
+Note:
+- Save as PDF still uses the browser print dialog. This is acceptable for the mock-up but should become true PDF generation in the real app.

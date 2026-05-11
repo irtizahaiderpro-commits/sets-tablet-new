@@ -1,0 +1,20 @@
+SETS Tablet App v45 Mobile Dashboard Fix
+
+What was changed:
+- Dashboard now behaves properly on phones instead of staying tablet/desktop-first.
+- Dashboard sidebar becomes a compact sticky mobile navigation area.
+- Dashboard KPI cards use a 2-column mobile grid.
+- Dashboard charts stack vertically on phone screens.
+- Pie chart and throughput chart now have fixed mobile heights so they do not collapse.
+- Pie chart centre total and legend typography were reduced for phone readability.
+- Throughput chart tick labels and bar width were reduced to prevent crowding.
+- App header date/time badges are hidden on phone to avoid overflow.
+- Added public/_redirects for Netlify SPA routing.
+
+Validation:
+- npm run typecheck: PASSED
+- npm run build: PASSED
+
+Netlify settings:
+Build command: npm run build
+Publish directory: dist

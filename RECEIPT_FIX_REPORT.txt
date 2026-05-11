@@ -1,0 +1,20 @@
+Receipt fix v42
+
+Fixed critical receipt issues:
+- SETS Receipt output is now a cleaner EFTCO-style office receipt, closer to the reference sheet.
+- Driver Receipt output is now a separate compact driver slip layout, not a duplicate of the SETS Receipt.
+- Both receipt outputs are available in the print/export popup:
+  - Print SETS Receipt
+  - Save SETS as PDF
+  - Print Driver Receipt
+  - Save Driver as PDF
+- The popup now opens on the selected receipt type when launched from the app button.
+- Patched hosted dist and static-preview JS/CSS files, not only source files.
+
+Technical checks:
+- dist JS syntax check passed with node --check.
+- static-preview JS syntax check passed with node --check.
+- CSS brace check passed.
+
+Known mock-up limitation:
+- Save as PDF still uses browser Print > Save as PDF, not server-side/generated PDF.

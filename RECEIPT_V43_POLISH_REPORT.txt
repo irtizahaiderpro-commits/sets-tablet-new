@@ -1,0 +1,12 @@
+SETS Tablet App v43 receipt polish
+
+Fixes applied after print-preview review:
+- SETS/EFTCO receipt print CSS tightened to fit onto one A4 portrait page.
+- Removed forced extra print page break after receipt output.
+- Reduced SETS receipt vertical row heights, header height, watermark size, logo size, and table spacing.
+- Driver receipt kept as a separate compact driver slip, not SETS/EFTCO layout.
+- Driver receipt table spacing tightened and comments/signature areas balanced so it no longer creates a second blank page.
+- Patched source CSS plus built dist/static-preview CSS for Netlify upload.
+
+Note:
+- Browser print settings still matter. Use Portrait, 100% scale or Default, and enable Background graphics if watermark/background is required.

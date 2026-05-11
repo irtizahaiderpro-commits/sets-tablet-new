@@ -1,0 +1,17 @@
+SETS Tablet App v41 final pre-hosting check
+
+Checked:
+- Existing built JS syntax: PASS (node --check)
+- Netlify/static relative asset paths: PATCHED
+- Old browser demo data carry-over: PATCHED by moving localStorage keys to sets-v41-records and sets-v41-draft
+- Visible duplicate lookup copy: PASS in current source; only one visible strong-data explanation remains
+- New / Existing Tank Intake: has lookup, draft saving, open intake workflow and completed/review status cards
+- Record saving: localStorage persistence is wired for draft and saved records
+- Saved Records / Print: records can be opened, continued, fixed, printed and exported through browser Save as PDF
+- SETS receipt and Driver receipt: separate receipt modes are wired into print/PDF buttons
+- Mobile/tablet: CSS includes responsive shell/sidebar/form/receipt rules
+- Netlify support: added netlify.toml and dist/_redirects
+
+Important mock-up limitation:
+- Save as PDF uses the browser print dialog with Destination = Save as PDF. It does not generate a downloaded PDF file internally yet. That is acceptable for this hosted mock-up, but the live app should use a real PDF generator.
+- Data is saved only in the same browser/device using localStorage. There is no cloud database yet.
